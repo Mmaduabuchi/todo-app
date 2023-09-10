@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list application</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <script src="app.js" defer></script>
+    <style>
+        .submitBtn{
+            background-color: purple;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 0.9rem;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        .submitBtn:active{
+            background-color: purple;
+            color: aliceblue;
+        }
+        .input{
+            border: 2px solid blanchedalmond;
+            box-shadow: 1px 1px 2px 4px rgb(117, 175, 252);
+            padding: 0.8rem;
+            font-weight: bolder;
+        }
+        body{
+            background: url("image/img.jpg");
+            background-size: cover;
+        }
+        .boxContainer{
+            border: 2px solid gainsboro;
+            background-color: rgba(50, 50, 100, 0.9) ;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="row mt-1">
+        <div class="col-1 col-md-3"></div>
+        <div class="col-10 mt-5 text-center text-light col-md-6 boxContainer">
+            <h2>Todo List App</h2>
+            <br><br>
+            <div class="row">
+                <div class="col">
+                    <input type="text" placeholder="Enter Your Data Here:" id="userInput"  class="form-control mb-5 input">
+                    <input type="submit" value="Add Data To App" class="form-control submitBtn">
+                </div>
+            </div>
+        </div>
+        <div class="col-1 col-md-3"></div>
+    </div>
+    <div class="row mt-1">
+        <div class="col-1 col-md-3"></div>
+        <div class="col mt-5 boxContainer">
+            <div class="userData text-light"></div>
+        </div>
+        <div class="col-1 col-md-3"></div>
+    </div>
+</body>
+</html>
